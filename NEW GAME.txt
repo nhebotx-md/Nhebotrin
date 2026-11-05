@@ -1,0 +1,18 @@
+NEW GAMES -> OURIN DELUXE 3.4
+
+Added public commands:
+.gamenew / .newgame / .youhugame
+.chess / .catur / .mini-chess
+.dino / .runner
+.mbim / .highway / .car
+.plane / .spacerush
+.ttc
+
+Notes:
+- Youhu's case.js, handler.js, shell, eval, jadibot and database were NOT copied.
+- Existing Ourin .tictactoe was preserved to avoid handler/answerHandler conflicts.
+- Youhu Tic-Tac-Toe is exposed as .ttc.
+- The plane plugin does NOT keep Youhu's "game" alias because Ourin already uses .game for group game toggle.
+- The five games use Ourin's plugin contract and Ourin's existing relayMessage API.
+- The HTML payload and certificate are still fetched from the same remote sources used by the original Youhu plugins.
+- In group chats, Ourin's existing .game on/off control still applies to category=game plugins.
